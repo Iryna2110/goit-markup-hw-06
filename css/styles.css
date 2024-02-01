@@ -917,6 +917,9 @@ display: block;
 .footer-text-form {
 margin-bottom: 16px;
 }
+.footer-form {
+    flex-direction: row;
+}
 .subscribe-btn {
 align-self: flex-end;
 }
