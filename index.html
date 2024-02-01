@@ -53,13 +53,84 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="open-menu-btn">
+          <svg width="24" heigh="24" class="open-menu-icon">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="burger-menu menu-open">
+        <button type="button" class="close-menu-btn">
+          <svg width="8" height="8" class="close-menu-icon">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container">
+          <nav class="menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-list-item">
+                <a href="./index.html" class="menu-item nav-text">Studio</a>
+              </li>
+              <li class="header-list-item">
+                <a href="" class="menu-item">Portfolio</a>
+              </li>
+              <li class="header-list-item">
+                <a href="" class="menu-item">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="menu-contacts">
+            <ul class="address-list menu-contact-list">
+              <li class="address-list-item">
+                <a class="address-item email-contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list-item">
+                <a class="address-item " href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-soc-list">
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link"
+                  ><svg width="16" height="16" class="team-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
+                ></a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link"
+                  ><svg width="16" height="16" class="team-soc-icon">
+                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                ></a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link"
+                  ><svg width="16" height="16" class="team-soc-icon">
+                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                ></a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link"
+                  ><svg width="16" height="16" class="team-soc-icon">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container container-hero">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions For Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
@@ -453,17 +524,19 @@
         </div>
 
         <div class="footer-subscribe">
-          <p class="footer-text-form">Subscribe</p>
-          <form class="footer-form">
-            <label for="email" class="footer-label">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-                class="footer-input"
-              />
-            </label>
+          <div class="form-container">
+            <p class="footer-text-form">Subscribe</p>
+            <form class="footer-form">
+              <label for="email" class="footer-label">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                  class="footer-input"
+                />
+              </label>
+          </div>
 
             <button type="submit" class="subscribe-btn">
               Subscribe
@@ -476,7 +549,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal-screen">
         <button type="button" class="close-button">
           <svg width="8" height="8" class="close-icon">
