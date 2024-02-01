@@ -228,8 +228,18 @@ color: #404bbf;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+@media screen and (max-width:785px) {
+    .container-header {
+        display: none;
+    }
+}
+@media screen and (min-width:786px) {
+    .burger-menu {
+        display: none;
+    }
+}
 
 .close-menu-btn {
     width: 24px;
@@ -270,7 +280,6 @@ color: #404bbf;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-text {
@@ -281,7 +290,6 @@ color: #404bbf;
     display: flex;
     flex-direction: column;
     gap: 48px;
-    margin-top: 168px;
 }
 .menu-contact-list {
     display: flex;

@@ -23,10 +23,10 @@
   <body>
     <header class="header">
       <div class="container container-header">
-        <nav class="navigation">
-          <a href="./index.html" class="header-logo"
+        <a href="./index.html" class="header-logo"
             >Web<span class="header-logo-part">Studio</span></a
           >
+        <nav class="navigation">
           <ul class="header-nav-list">
             <li class="header-list-item">
               <a href="./index.html" class="header-item current">Studio</a>
@@ -55,7 +55,7 @@
         </address>
 
         <button type="button" class="open-menu-btn">
-          <svg width="24" heigh="24" class="open-menu-icon">
+          <svg width="24" height="24" class="open-menu-icon">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
@@ -83,46 +83,49 @@
             </ul>
           </nav>
 
-          <address class="menu-contacts">
-            <ul class="address-list menu-contact-list">
-              <li class="address-list-item">
-                <a class="address-item email-contact" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address-list-item">
-                <a class="address-item " href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
+          <div class="menu-contacts-wrap">
+            <address class="menu-contacts">
+              <ul class="address-list menu-contact-list">
+                <li class="address-list-item">
+                  <a class="address-item email-contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-list-item">
+                  <a class="address-item " href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+              
+            </address>
             <ul class="menu-soc-list">
-              <li class="team-soc-item">
-                <a href="" class="team-soc-link"
-                  ><svg width="16" height="16" class="team-soc-icon">
-                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
-                ></a>
-              </li>
-              <li class="team-soc-item">
-                <a href="" class="team-soc-link"
-                  ><svg width="16" height="16" class="team-soc-icon">
-                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                ></a>
-              </li>
-              <li class="team-soc-item">
-                <a href="" class="team-soc-link"
-                  ><svg width="16" height="16" class="team-soc-icon">
-                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                ></a>
-              </li>
-              <li class="team-soc-item">
-                <a href="" class="team-soc-link"
-                  ><svg width="16" height="16" class="team-soc-icon">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </address>
+                <li class="team-soc-item">
+                  <a href="" class="team-soc-link"
+                    ><svg width="16" height="16" class="team-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram-2"></use></svg
+                  ></a>
+                </li>
+                <li class="team-soc-item">
+                  <a href="" class="team-soc-link"
+                    ><svg width="16" height="16" class="team-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                  ></a>
+                </li>
+                <li class="team-soc-item">
+                  <a href="" class="team-soc-link"
+                    ><svg width="16" height="16" class="team-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                  ></a>
+                </li>
+                <li class="team-soc-item">
+                  <a href="" class="team-soc-link"
+                    ><svg width="16" height="16" class="team-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                  ></a>
+                </li>
+              </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -536,7 +539,6 @@
                   class="footer-input"
                 />
               </label>
-          </div>
 
             <button type="submit" class="subscribe-btn">
               Subscribe
