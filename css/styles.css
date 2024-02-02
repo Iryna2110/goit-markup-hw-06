@@ -217,6 +217,7 @@ color: #404bbf;
     background-color: #fff;
     position: fixed;
     padding:  72px 24px 40px 16px;
+    display: flex;
     justify-content: space-between;
     opacity: 0;
     visibility: hidden;
@@ -230,12 +231,12 @@ color: #404bbf;
     pointer-events: auto;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-/* @media screen and (max-width:785px) {
+@media screen and (max-width:767px) {
     .container-header {
         display: none;
-    } */
+    }
 }
-@media screen and (min-width:786px) {
+@media screen and (min-width:768px) {
     .burger-menu {
         display: none;
     }
@@ -381,7 +382,7 @@ color: #404bbf;
     background-color: #404BBF
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-tab-1x.jpg);
     width: 100%;
@@ -493,7 +494,7 @@ color: #404bbf;
     color: #434455;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
 .features-list {
     display: flex;
     flex-direction: row;
@@ -545,11 +546,9 @@ color: #404bbf;
 }
 .team-card-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 72px;
-    border-radius: 0px 0px 4px 4px;
-    
-    padding: 0 12px;
+    justify-content: center;
 }
 
 .team-card-item {
@@ -620,29 +619,17 @@ color: #404bbf;
     fill: #F4F4FD;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
 .team-card-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 64px 24px;
-    border-radius: 0px 0px 4px 4px;
-    padding-left: 92px;
-    padding-right: 92px;
+    justify-content: center;
 }
-
-.team-card-item {
-width: calc((100% - 24px) / 2);
-} 
 }
 
 @media screen and (min-width: 1158px) {
 .team-card-list {
     padding-left: 0;
     padding-right: 0;
-}
-    .team-card-item {
-    width: calc((100% - 72px) / 4);
 }
 }
 
@@ -664,15 +651,20 @@ width: calc((100% - 24px) / 2);
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
-    
 }
 .portfolio-list-item {
-    min-width: 288px;
+    width: calc(100% - 32px);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0%);
 }   
+@media screen and (max-width:785px) {
+    .portfolio-list-item {
+    width: calc(100% - 32px);
+}
+}
 
 .portfolio-list-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -737,7 +729,7 @@ width: calc((100% - 24px) / 2);
     color: #434455;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
 .portfolio-list-item {
 width: calc((100% - 24px) / 2);
 }
@@ -754,7 +746,6 @@ flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
 }
-
 }
 
 /*-----------------------------------*/
@@ -927,7 +918,7 @@ row-gap: 48px;
     margin-left: 16px;
 }
 
-@media screen and (min-width:786px) {
+@media screen and (min-width:768px) {
 .footer-container {
 display: flex;
 flex-direction: row;
@@ -1211,7 +1202,7 @@ align-self: flex-end;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width:786px) {
+@media screen and (min-width:768px) {
 .modal-screen {
 width: 408px;
 min-height: 584px;
