@@ -125,7 +125,6 @@ img {
     margin-right: 120px;
         }
 .header-nav-list {
-    display: flex;
     gap: 40px;
 }
 .contacts {
@@ -198,16 +197,16 @@ color: #404bbf;
 @media screen and (min-width: 1158px) {
     
     .header-logo {
-        margin-right: 76px;
+    margin-right: 76px;
     }
 
     .address-list {
-        display: flex;
-        gap: 40px;
+    display: flex;
+    gap: 40px;
     }
     .address-item {
-        font-size: 16px;
-        line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
     }
 }
 /* ------------------mob-menu---------------- */
@@ -255,19 +254,19 @@ color: #404bbf;
     }
     
     .close-menu-icon {
-        fill: #2E2F42;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .close-menu-btn:hover,
     .close-menu-btn:focus {
-        background-color: #404BBF;
-        border: none;
+    background-color: #404BBF;
+    border: none;
     }
     
     .close-menu-btn:hover>.close-menu-icon,
     .close-menu-btn:focus>.close-menu-icon {
-        fill: #FFFFFF;
+    fill: #FFFFFF;
     }
 
 
@@ -339,7 +338,7 @@ color: #404bbf;
 }
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-mob-2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-mob-2x.jpg);
     }
 }
 .container-hero {
